@@ -1,0 +1,13 @@
+<p *ngFor="let pregunta of preguntas">
+{{pregunta}}
+</p>
+<hr>
+<p *ngFor="let objPregunta of preguntasObj">
+  {{objPregunta.pregunta}}: 
+  <br>
+  <span class="si">Si {{objPregunta.si}}</span> / 
+  <span class="no">No {{objPregunta.no}}</span>
+</p>
+
+<hr>
+<app-model></app-model>
